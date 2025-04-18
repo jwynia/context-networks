@@ -11,7 +11,19 @@ For comprehensive documentation, guides, and explanations, visit our GitHub Page
 ## 🗂️ Repository Structure
 
 ```
-
+├── agent-specific-prompts/    # Specialized prompts for different AI assistants
+│   ├── cline/                 # Prompts optimized for Cline
+│   └── roo/                   # Prompts optimized for Roo
+├── core/                      # Core framework concepts and documentation
+├── docs/                      # Documentation site source files
+├── example-networks/          # Sample context networks for different use cases
+├── prompts/                   # General-purpose prompt templates
+│   └── simple/                # Simplified prompt templates for getting started
+├── tools/                     # Utilities and scripts
+│   └── generators/            # Tools for generating context network components
+├── CONTRIBUTING.md            # Contribution guidelines
+├── LICENSE                    # MIT License
+└── README.md                  # This file
 ```
 
 ## 🚀 Getting Started
