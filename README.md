@@ -33,6 +33,10 @@ For comprehensive documentation, guides, and explanations, visit our GitHub Page
 3. Use the prompt templates to begin building your context network with an AI assistant
 4. Adapt the scripts and utilities as needed for your specific implementation
 
+## FAQ
+- Why isn't this project itself managed by a context network?
+  - Excellent question, fellow "meta" enthusiast. My own default instinct is to want to go similarly meta on pretty much everything I touch. I've tried using context networks to make context networks, to manage information about them, etc. At the moment, everything I've tried to make that work has left the agents I've used (with every model I've tried) confused. If someone can get it to keep the concepts separate in the process, I'd love the contribution. And, I'll definitely continue trying myself when new models come out. Until then, I often use a Claude project with specific files from this project to work on how to improve it and use manual tracking of things and "regular" agentic assistance.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please check out our [contribution guidelines](CONTRIBUTING.md) for details on how to get started.
