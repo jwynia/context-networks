@@ -2,7 +2,7 @@
 
 ## From Memory Banks to Context Networks
 
-If you've spent time working with LLM agents like Claude, you've probably encountered the frustrating challenge of context preservation. These models are incredibly capable, but their "memory" resets with each session, losing all the collaborative context you've built together.
+If you've spent time working with LLM agents like Cursor/Cline/Roo, you've probably encountered the frustrating challenge of context preservation. These models are incredibly capable, but their "memory" resets with each session, losing all the collaborative context you've built together.
 
 The common solution has been to implement memory systems. [Cline's Memory Bank](https://docs.cline.bot/improving-your-prompting-skills/cline-memory-bank) is a notable example - a structured, code-centric approach that provides a mechanistic way to store and retrieve information between sessions. While effective, these approaches often feel rigid, focusing on command structures and explicit data organization that requires significant overhead.
 
