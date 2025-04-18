@@ -4,7 +4,7 @@
 
 If you've spent time working with LLM agents like Claude, you've probably encountered the frustrating challenge of context preservation. These models are incredibly capable, but their "memory" resets with each session, losing all the collaborative context you've built together.
 
-The common solution has been to implement memory systems. [Cline's Memory Bank](https://github.com/ianderrington/genai/blob/master/examples/prompts/cline_memory.md) is a notable example - a structured, code-centric approach that provides a mechanistic way to store and retrieve information between sessions. While effective, these approaches often feel rigid, focusing on command structures and explicit data organization that requires significant overhead.
+The common solution has been to implement memory systems. [Cline's Memory Bank](https://docs.cline.bot/improving-your-prompting-skills/cline-memory-bank) is a notable example - a structured, code-centric approach that provides a mechanistic way to store and retrieve information between sessions. While effective, these approaches often feel rigid, focusing on command structures and explicit data organization that requires significant overhead.
 
 This got me thinking: what would a less mechanistic, more collaborative approach look like? Something that could work with any project folder full of text files, where LLM agents could naturally navigate the information space without constant human direction?
 
@@ -56,22 +56,22 @@ The result is less about commanding an AI to remember things and more about crea
 
 This repository contains everything you need to implement context networks in your own projects:
 
-1. **[Comprehensive Guide](./guide/context-network-guide.md)**: The complete framework explaining what context networks are, why they're useful, how they work, and how to build them.
+1. **[Comprehensive Guide](../core/comprehensive-context-network-guide.md)**: The complete framework explaining what context networks are, why they're useful, how they work, and how to build them.
 
-2. **[Human Implementation Guide](./guide/context-network-human-implementation.md)**: Practical considerations for human teams implementing context networks.
+2. **[Human Implementation Guide](../core/context-networks-for-humans.md)**: Practical considerations for human teams implementing context networks.
 
-3. **[Prompt Templates](./prompts/)**: Ready-to-use prompts for setting up context networks with your AI assistants.
+3. **[Prompt Templates](../prompts/)**: Ready-to-use prompts for setting up context networks with your AI assistants.
 
-4. **[Example Projects](./examples/)**: Sample context networks for different project types.
+4. **[Example Projects](../example-networks/)**: Sample context networks for different project types.
 
-5. **[Tools](./tools/)**: Utilities to help build and maintain context networks.
+5. **[Tools](../tools/)**: Utilities to help build and maintain context networks.
 
 ## Getting Started
 
 The easiest way to get started is to:
 
-1. Read the [Comprehensive Guide](./guide/context-network-guide.md) to understand the framework
-2. Choose a prompt template from the [Prompts folder](./prompts/) based on your project type
+1. Read the [Comprehensive Guide](../core/comprehensive-context-network-guide.md) to understand the framework
+2. Choose a prompt template from the [Prompts folder](../prompts/) based on your project type
 3. Work with your preferred AI assistant to adapt the framework to your specific project
 4. Iterate and improve your context network based on actual use
 
@@ -87,4 +87,4 @@ I'm excited to see how this framework evolves and what you build with it!
 
 ---
 
-*Want to contribute? Check out the [contribution guidelines](./CONTRIBUTING.md) to get started.*
+*Want to contribute? Check out the [contribution guidelines](../CONTRIBUTING.md) to get started.*
