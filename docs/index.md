@@ -56,22 +56,22 @@ The result is less about commanding an AI to remember things and more about crea
 
 This repository contains everything you need to implement context networks in your own projects:
 
-1. **[Comprehensive Guide](../core/comprehensive-context-network-guide.md)**: The complete framework explaining what context networks are, why they're useful, how they work, and how to build them.
+1. **[Comprehensive Guide](https://github.com/jwynia/context-networks/blob/main/core/comprehensive-context-network-guide.md)**: The complete framework explaining what context networks are, why they're useful, how they work, and how to build them.
 
-2. **[Human Implementation Guide](../core/context-networks-for-humans.md)**: Practical considerations for human teams implementing context networks.
+2. **[Human Implementation Guide](https://github.com/jwynia/context-networks/blob/main/core/context-networks-for-humans.md)**: Practical considerations for human teams implementing context networks.
 
-3. **[Prompt Templates](../prompts/)**: Ready-to-use prompts for setting up context networks with your AI assistants.
+3. **[Prompt Templates](https://github.com/jwynia/context-networks/tree/main/prompts/)**: Ready-to-use prompts for setting up context networks with your AI assistants.
 
-4. **[Example Projects](../example-networks/)**: Sample context networks for different project types.
+4. **[Example Projects](https://github.com/jwynia/context-networks/tree/main/example-networks/)**: Sample context networks for different project types.
 
-5. **[Tools](../tools/)**: Utilities to help build and maintain context networks.
+5. **[Tools](https://github.com/jwynia/context-networks/tree/main/tools/)**: Utilities to help build and maintain context networks.
 
 ## Getting Started
 
 The easiest way to get started is to:
 
-1. Read the [Comprehensive Guide](../core/comprehensive-context-network-guide.md) to understand the framework
-2. Choose a prompt template from the [Prompts folder](../prompts/) based on your project type
+1. Read the [Comprehensive Guide](https://github.com/jwynia/context-networks/blob/main/core/comprehensive-context-network-guide.md) to understand the framework
+2. Choose a prompt template from the [Prompts folder](https://github.com/jwynia/context-networks/tree/main/prompts/) based on your project type
 3. Work with your preferred AI assistant to adapt the framework to your specific project
 4. Iterate and improve your context network based on actual use
 
@@ -87,4 +87,4 @@ I'm excited to see how this framework evolves and what you build with it!
 
 ---
 
-*Want to contribute? Check out the [contribution guidelines](../CONTRIBUTING.md) to get started.*
+*Want to contribute? Check out the [contribution guidelines](https://github.com/jwynia/context-networks/blob/main/CONTRIBUTING.md) to get started.*
