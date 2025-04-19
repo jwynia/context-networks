@@ -5,6 +5,8 @@ Doing that is found in Roo's Prompts tab, under the expandable "Advanced: Overri
 
 ** Only use the prompts in this folder directly if you haven't customized your Roo modes already **
 
+Be sure to change the paths on things like the working directory in the prompts.
+
 Once your Roo modes are in actual files in the project via overrides, you can use Roo or other agents to add instructions to them for using the context network. In my experience, specifically asking for what to ADD makes a difference. Asking an agent to alter a prompt (especially its own) puts you in really weird territory, but asking it to actually rewrite it often leads to losing all tool use or similar messes. So, ask for a plan for how it *would* alter it before letting it.
 
 I haven't done it, but have thought about setting Roo rules so that the .roo folder is restricted from all modes but a specific one that's locked down to implement (and check for risks) plans. I'd love to see someone try that and contribute it.
