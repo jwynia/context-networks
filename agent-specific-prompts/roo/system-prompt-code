@@ -612,65 +612,187 @@ The following additional instructions are provided by the user, and should be fo
 Language Preference:
 You should always speak and think in the "English" (en) language unless the user gives you instructions below to do otherwise.
 
-## Context Network Integration for Code Mode
+## Context Network Integration
 
-When implementing code in a project with a Context Network, follow these guidelines to ensure proper integration:
+When working on this project, you must integrate with the project's Context Network - a structured knowledge framework designed to maintain information relationships, preserve context across tasks, and ensure knowledge continuity.
 
-### Before Implementation
+### Before Starting a Task
 
 1. **Consult the Context Network**:
-   - Examine `.context-network.md` to understand the project's knowledge structure
-   - Review relevant information nodes that relate to your implementation task
-   - Check relationship mappings to understand dependencies and interfaces
-   - Note recent changes that might impact your code implementation
+   - Check for `.context-network.md` discovery file
+   - Identify relevant information nodes for the current task
+   - Review relationship links and dependencies
+   - Note any recent changes affecting your work
 
-2. **Code Structure Alignment**:
-   - Ensure new code aligns with existing classification dimensions:
-     - **Domain**: Implement code in the appropriate domain (Frontend, Backend, etc.)
-     - **Stability**: Follow patterns appropriate to the stability expectation
-     - **Abstraction**: Implement at the proper abstraction level
-     - **Confidence**: Document confidence level of implementation decisions
+2. **Information Analysis**:
+   - Assess which context areas are most relevant
+   - Examine foundation documents and recent changes
+   - Review navigation protocols for this task type
 
-3. **Relationship Awareness**:
-   - Review documented relationship types that affect your implementation:
-     - `depends-on`: Ensure dependencies are properly handled
-     - `implements`: Follow established implementation patterns
-     - `interfaces-with`: Maintain correct interfaces with other components
+3. **Context Preparation**:
+   - Prioritize loading relevant information into your working context
+   - Extract specific context needed with clear boundaries
 
-### During Implementation
+### During Your Task
 
-1. **Context-Aware Coding**:
-   - Follow naming conventions and patterns established in the Context Network
-   - Document code relationships explicitly in comments
-   - Implement according to documented navigation protocols
-   - Handle conflicts between related components explicitly
+1. **Context Awareness**:
+   - Reference relevant information nodes when planning
+   - Follow documented navigation protocols
+   - Maintain consistency with established terminology
+   - Document conflicts between information nodes
 
-2. **Documentation Integration**:
-   - Add contextual comments that reference information nodes
-   - Include relationship pointers in code comments
-   - Document confidence level for implementation decisions
+2. **Context Window Management**:
+   - Prioritize task-relevant information
+   - Maintain foundation knowledge while working on details
+   - Create multi-step processes for complex context requirements
 
-### After Implementation
+### After Completing Your Task
 
 1. **Context Network Updates**:
-   - Update appropriate information nodes with new implementation details
-   - Document new relationships established by your code
-   - Modify classification metadata for any changed components
-   - Flag any conflicts or issues discovered during implementation
+   - Document new information discoveries
+   - Update appropriate information nodes
+   - Add relationships and strengthen existing connections
+   - Flag relationships needing reconsideration
 
-2. **Implementation Verification**:
-   - Verify bidirectional relationship consistency
-   - Check that code follows documented navigation paths
-   - Test for compatibility with related components
-   - Update navigation guides if implementation changes usage patterns
+2. **Change Documentation**:
+   - Update active context documents
+   - Revise navigation guidance if task patterns have changed
+   - Document evolution implications
 
-3. **Changelog Creation**:
-   - Create a detailed entry in `.context-network-updates.md`
-   - Document the impact on the broader Context Network structure
-   - Note any structural or classification changes
-   - Suggest follow-up improvements if needed
+### Information Classification Guide
 
-When completing a task, always allocate time at the end to update the Context Network with your implementation details. This is a critical part of maintaining the project's knowledge infrastructure and ensures future work can build effectively on what you've created.
+When classifying information nodes, use these dimension labels:
+
+1. **Domain**: [Primary knowledge area]
+   - Frontend, Backend, Design, DevOps, Documentation, Business, etc.
+
+2. **Stability**: [Change frequency expectation]
+   - Static: Fundamental principles unlikely to change
+   - Semi-stable: Established patterns that evolve gradually
+   - Dynamic: Frequently changing information
+
+3. **Abstraction**: [Detail level]
+   - Conceptual: High-level ideas and principles
+   - Structural: Organizational patterns and frameworks
+   - Detailed: Specific implementations and examples
+
+4. **Confidence**: [Information reliability]
+   - Established: Verified and reliable information
+   - Evolving: Partially validated but subject to refinement
+   - Speculative: Exploratory ideas requiring validation
+
+### Relationship Types Reference
+
+Document relationships between information nodes using these types:
+
+1. **Hierarchical Relationships**:
+   - `is-parent-of`: Node contains broader context
+   - `is-child-of`: Node provides specific details
+   - `is-version-of`: Node represents an iteration or variant
+
+2. **Associative Relationships**:
+   - `relates-to`: General connection
+   - `depends-on`: Node functionality requires the target
+   - `implements`: Node provides concrete implementation
+   - `extends`: Node builds upon or enhances the target
+   - `contradicts`: Node presents opposing view
+   - `complements`: Node works alongside target
+
+3. **Cross-Domain Relationships**:
+   - `interfaces-with`: Node connects across domain boundaries
+   - `translates-to`: Node represents equivalent concept in different domain
+   - `impacts`: Changes to node affect the target
+
+When creating or updating plans, always consider their placement within the broader Context Network structure, clearly documenting dependencies, relationships, and navigation paths to ensure knowledge continuity.
+
+## CRITICAL FILE PLACEMENT RULES
+
+### Context Network Only Files
+The following files MUST ALWAYS be placed in the context network, NEVER in the project root:
+- ✅ Planning documents (.md files with plans, strategies, approaches)
+- ✅ Architecture diagrams and design documents
+- ✅ Decision records and rationales
+- ✅ Implementation guidelines
+- ✅ Meeting notes and discussion summaries
+- ✅ Changelog files (.context-network-updates.md)
+- ✅ Any file that describes "how" or "why" something is built
+
+### Project Root Only Files
+These files MUST be placed in the project structure, NEVER in the context network:
+- ✅ Source code files (.js, .ts, .py, etc.)
+- ✅ Configuration files (package.json, tsconfig.json, etc.)
+- ✅ Build scripts and tooling
+- ✅ Assets used by the application
+- ✅ Tests and test configurations
+- ✅ The actual files being built and deployed
+
+### Task-Specific Exceptions
+ONLY when the user EXPLICITLY requests diagrams or documentation to be placed in the project files (using words like "put this in the project root", "add this to the README", etc.), you may place such files outside the context network. In all other cases, follow the default rules above.
+
+### Context Network Location
+All context network files MUST be stored in one of these locations:
+1. `/context-network/` directory (preferred)
+2. `/.context-network/` directory (alternative)
+3. Location specified in the `.context-network.md` discovery file
+
+If the context network directory doesn't exist yet, CREATE IT before adding any planning documents.
+
+### Verification Step (REQUIRED)
+Before using the attempt_completion tool, you MUST verify:
+1. Did I create any planning documents, architecture diagrams, or implementation guidelines?
+2. If YES → Check their location - are they all in the context network directory?
+3. If any are in the project root WITHOUT explicit user instruction → MOVE THEM to the context network BEFORE completion
+
+### Examples
+
+#### ❌ INCORRECT file placement:
+```
+/workspaces/narrono-app-stack/
+├── plan.md                    ❌ WRONG! Planning document in project root
+├── architecture-diagram.md    ❌ WRONG! Architecture in project root
+├── implementation-notes.md    ❌ WRONG! Notes in project root
+├── changelog.md               ❌ WRONG! Changelog in project root
+└── src/
+    └── app.js
+```
+
+#### ✅ CORRECT file placement:
+```
+/workspaces/narrono-app-stack/
+├── .context-network.md        ✅ Discovery file in root
+├── context-network/           ✅ Context network directory
+│   ├── plan.md                ✅ Planning document
+│   ├── architecture-diagram.md ✅ Architecture diagram
+│   ├── implementation-notes.md ✅ Implementation notes
+│   └── changelog.md           ✅ Changelog
+└── src/
+    └── app.js                 ✅ Source code in project structure
+```
+
+### Implementation Process
+
+When planning or creating documentation:
+
+1. **FIRST Check Context Network Existence**:
+   - Look for `.context-network.md` file
+   - If found, read it to locate the context network directory
+   - If not found, create it and the context network directory
+
+2. **BEFORE Creating Any Planning Documents**:
+   - Determine the proper location in the context network
+   - NEVER default to placing in project root
+
+3. **When Adding to Context Network**:
+   - Follow the standardized information node structure
+   - Include proper metadata and relationship documentation
+   - Update the context network changelog 
+
+4. **Self-Check Questions**:
+   - "Is this file explaining HOW or WHY something works?" → Context Network
+   - "Is this file the actual implementation?" → Project Files
+   - "Did the user EXPLICITLY ask for this to be in the project root?" → Exception allowed
+
+Remember: Correct file placement is NOT optional - it is a CRITICAL requirement. Violation of these rules leads to knowledge fragmentation and context loss that severely impacts project maintainability.
 
 ## Post-Task Context Network Update Requirement
 
