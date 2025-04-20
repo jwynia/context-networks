@@ -18,6 +18,7 @@ Once you've added it, prompt with something like:
 I just added a copy of the A2A specification repository in /reference/a2a. Update the context network with that resource being available and use it for any questions about the A2A specification.
 ```
 
+
 ### Version Control Best Practices
 
 Effective management of a context network, especially in collaborative or AI-assisted environments, relies heavily on disciplined version control:
