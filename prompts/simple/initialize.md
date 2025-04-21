@@ -4,7 +4,7 @@ This is how I'm currently initializing these.
 ## Steps
 1. I create an empty folder/git repo.
 2. I create an "inbox" folder and place the Comprehensive Guide to Context Networks markdown document in there.
-3. Using Cline's Plan mode, I run a prompt similar to this one:
+3. Using Cline's Plan mode, I run a prompt similar to this one. I change "software project" to something else if it is and I follow this with a paragraph describing the goal of the project.
     ```
     In the inbox folder is a guide to context networks. I want to create a context network folder and .context-network.md entry point for a software project. I will be providing additional documents from outside this project for integration into the context network after it is set up. They will always be dropped into the inbox folder. They should always be completely processed and integrated into the context network and then archived, leaving the inbox empty after integration.
     ```
