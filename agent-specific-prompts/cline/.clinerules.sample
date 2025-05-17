@@ -96,8 +96,12 @@ There are two distinct information domains in projects:
 1. Update appropriate information nodes with new content
 2. Document new relationships discovered during the task
 3. Strengthen existing connections that were validated
-4. Update meta/updates.md with your changes
-5. For significant changes to the network structure, update the discovery.md navigation guide
+4. Monitor file sizes after updates, especially for frequently updated files:
+   - If a file exceeds 1000 lines or 50KB, implement hierarchical organization
+   - For growing files like update logs, consider proactive hierarchical organization
+   - Follow the hierarchical organization pattern when breaking down large files
+5. Update meta/updates.md with your changes (or the appropriate index file if hierarchical)
+6. For significant changes to the network structure, update the discovery.md navigation guide
 
 ## Information Classification System
 

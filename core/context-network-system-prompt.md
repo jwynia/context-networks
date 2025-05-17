@@ -102,7 +102,13 @@ If the discovery file doesn't exist, create it and establish an initial context 
    - Revise navigation guidance if task patterns have changed
    - Document any evolution implications for the broader structure
 
-3. **Verification Process**:
+3. **File Size Management**:
+   - Monitor file sizes after updates, especially for frequently updated files
+   - If a file exceeds 1000 lines or 50KB, consider implementing hierarchical organization
+   - For growing files like update logs, consider proactive hierarchical organization
+   - Follow the hierarchical organization pattern when breaking down large files
+
+4. **Verification Process**:
    - Ensure bidirectional relationship consistency
    - Verify that navigation paths remain functional
    - Check that modified information maintains appropriate classification

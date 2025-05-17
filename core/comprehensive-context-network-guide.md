@@ -219,24 +219,89 @@ context-network/
 │   └── principles.md           # Guiding principles and standards
 ├── domains/                    # Domain-specific information
 │   ├── domain_a/               # Information for domain A
+│   │   ├── index.md            # Domain A overview and navigation
+│   │   ├── component_1.md      # Component-specific information
+│   │   └── component_2.md      # Component-specific information
 │   └── domain_b/               # Information for domain B
+│       ├── index.md            # Domain B overview and navigation
+│       └── [domain content]    # Domain-specific files
 ├── processes/                  # Process documentation
 │   ├── development.md          # Development workflows
 │   ├── testing.md              # Testing procedures
 │   └── deployment.md           # Deployment processes
 ├── decisions/                  # Architecture and design decisions
+│   ├── index.md                # Decision record index and navigation
 │   ├── decision_001.md         # Individual decision records
-│   └── decision_index.md       # Index of all decisions
+│   └── decision_002.md         # Individual decision records
 ├── planning/                   # Planning documents
+│   ├── index.md                # Planning overview and navigation
 │   ├── roadmap.md              # Project roadmap
 │   └── milestones.md           # Milestone definitions
 ├── cross-domain/               # Cross-cutting concerns
 │   ├── dependencies.md         # Cross-component dependencies
 │   └── interfaces.md           # Interface definitions
 └── meta/                       # Information about the network itself
-    ├── update_log.md           # Record of network changes
+    ├── updates/                # Hierarchical organization for updates
+    │   ├── index.md            # Updates overview and recent entries
+    │   ├── infrastructure/     # Infrastructure-related updates
+    │   │   ├── index.md        # Infrastructure updates index
+    │   │   └── [updates]       # Individual update files
+    │   └── features/           # Feature-related updates
+    │       ├── index.md        # Feature updates index
+    │       └── [updates]       # Individual update files
     └── maintenance.md          # Network maintenance procedures
 ```
+
+### Hierarchical Organization for Growing Sections
+
+As your context network grows, certain sections may benefit from hierarchical organization. Common candidates include:
+
+1. **Updates/Change Logs**: When `meta/update_log.md` grows too large
+2. **Decision Records**: When you have many architecture decision records
+3. **Domain Documentation**: When domain-specific information becomes extensive
+4. **Process Documentation**: When process documentation includes many detailed procedures
+
+#### Example: Hierarchical Updates Structure
+
+```
+meta/
+└── updates/
+    ├── index.md                # Main entry with recent updates across categories
+    ├── infrastructure/         # Infrastructure-related updates
+    │   ├── index.md            # Index of infrastructure updates
+    │   ├── update_2023_01.md   # Individual update files
+    │   └── update_2023_02.md
+    ├── features/               # Feature-related updates
+    │   ├── index.md            # Index of feature updates
+    │   ├── feature_a_update.md # Individual update files
+    │   └── feature_b_update.md
+    └── templates/              # Templates for consistent updates
+        └── update_template.md
+```
+
+#### Example: Hierarchical Domain Structure
+
+```
+domains/
+└── authentication/
+    ├── index.md                # Domain overview and navigation
+    ├── architecture/           # Authentication architecture
+    │   ├── index.md            # Architecture overview
+    │   ├── auth_flow.md        # Authentication flow details
+    │   └── security_model.md   # Security model details
+    ├── implementation/         # Implementation details
+    │   ├── index.md            # Implementation overview
+    │   └── [implementation files]
+    └── integration/            # Integration guidance
+        ├── index.md            # Integration overview
+        └── [integration files]
+```
+
+Each index.md file serves as a navigation hub for its section, providing:
+- Overview of the section's purpose and scope
+- Links to all content within the section
+- Recent or important additions
+- Relationships to other sections
 
 ## Information Node Templates
 

@@ -86,7 +86,79 @@ Design customized entry points based on different roles:
    - Emphasize perspective maps for different viewpoints
    - Highlight decision record documentation
 
-## 3. Automation Opportunities
+## 3. File Size Management and Scaling
+
+As context networks grow, managing file size and organization becomes critical for maintaining usability:
+
+### Hierarchical Organization Strategy
+
+1. **When to Implement Hierarchical Organization**:
+   - When individual files exceed 1000 lines or 50KB
+   - When information is regularly added and will continue to grow
+   - When finding specific information within a file becomes difficult
+   - When content naturally falls into distinct categories
+   - When information is frequently referenced and needs to be easily accessible
+
+2. **Implementation Approach**:
+   - Start with content analysis to identify natural categories
+   - Design directory structures that reflect these categories
+   - Create index files at each level to provide navigation
+   - Migrate content incrementally, category by category
+   - Implement consistent linking between related content
+   - Create templates for new content to maintain consistency
+
+3. **Common Hierarchical Patterns**:
+   - **Updates Tracking**: Break down by category, time period, or domain
+   - **Decision Records**: Organize by domain, status, or impact level
+   - **Domain Documentation**: Structure by component, feature, or lifecycle stage
+   - **Process Documentation**: Organize by role, phase, or frequency
+
+4. **Migration Best Practices**:
+   - Create the structure first before moving content
+   - Add deprecation notices to original files with links to new structure
+   - Migrate incrementally rather than all at once
+   - Update all references to maintain link integrity
+   - Maintain both structures temporarily during transition
+   - Document the migration process for future reference
+
+### Practical Examples
+
+1. **Updates Log Transformation**:
+   ```
+   Before: meta/update_log.md (single large file)
+   
+   After:
+   meta/updates/
+   ├── index.md                # Main entry with recent updates across categories
+   ├── infrastructure/         # Infrastructure-related updates
+   │   ├── index.md            # Index of infrastructure updates
+   │   └── [individual updates]
+   ├── features/               # Feature-related updates
+   │   ├── index.md            # Index of feature updates
+   │   └── [individual updates]
+   └── templates/              # Templates for consistent updates
+       └── update_template.md
+   ```
+
+2. **Domain Documentation Expansion**:
+   ```
+   Before: domains/authentication.md (single file)
+   
+   After:
+   domains/authentication/
+   ├── index.md                # Domain overview and navigation
+   ├── architecture/           # Authentication architecture
+   │   ├── index.md            # Architecture overview
+   │   └── [architecture files]
+   ├── implementation/         # Implementation details
+   │   ├── index.md            # Implementation overview
+   │   └── [implementation files]
+   └── integration/            # Integration guidance
+       ├── index.md            # Integration overview
+       └── [integration files]
+   ```
+
+## 4. Automation Opportunities
 
 While context networks can be maintained manually, automation can significantly reduce overhead:
 

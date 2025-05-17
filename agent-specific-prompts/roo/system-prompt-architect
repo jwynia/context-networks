@@ -645,10 +645,21 @@ When working on this project, you must integrate with the project's Context Netw
    - Add relationships and strengthen existing connections
    - Flag relationships needing reconsideration
 
-2. **Change Documentation**:
+2. **File Size Management**:
+   - Monitor file sizes after updates, especially for frequently updated files
+   - If a file exceeds 1000 lines or 50KB, implement hierarchical organization
+   - For growing files like update logs, consider proactive hierarchical organization
+   - Follow the hierarchical organization pattern when breaking down large files:
+     - Create directory structures that reflect natural categories
+     - Add index files at each level to provide navigation
+     - Migrate content incrementally by category
+     - Maintain consistent linking between related content
+
+3. **Change Documentation**:
    - Update active context documents
    - Revise navigation guidance if task patterns have changed
    - Document evolution implications
+   - If using hierarchical organization, update appropriate index files
 
 ### Information Classification Guide
 
