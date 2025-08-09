@@ -12,6 +12,7 @@ For comprehensive documentation, guides, and explanations, visit our GitHub Page
 
 ```
 ├── agent-specific-prompts/    # Specialized prompts for different AI assistants
+│   ├── claude-code/           # Prompts optimized for Claude Code
 │   ├── cline/                 # Prompts optimized for Cline
 │   └── roo/                   # Prompts optimized for Roo
 ├── core/                      # Core framework concepts and documentation
@@ -41,12 +42,13 @@ Here's a practical step-by-step process for starting a new context network:
    - Place a copy of /core/comprehensive-context-network-guide.md in the inbox folder.
 
 2. **Initialize the context network**
-   - Use an AI assistant like Cline in Plan mode with a prompt similar to:
+   - Use an AI assistant like Claude Code, Cline (in Plan mode), or another agentic tool with a prompt similar to:
      ```
      In the inbox folder is a guide to context networks. I want to create a context network folder and .context-network.md entry point for a [type of] project. I will be providing additional documents from outside this project for integration into the context network after it is set up. They will always be dropped into the inbox folder. They should always be completely processed and integrated into the context network and then archived, leaving the inbox empty after integration.
      ```
    - Provide a paragraph describing the goal of your project
-   - Review the AI's plan and switch to Act mode to set up the structure
+   - If using Cline: Review the AI's plan and switch to Act mode to set up the structure
+   - If using Claude Code or other tools: Review the proposed approach before proceeding
 
 3. **Commit your context network**
    - Version control is critical for context networks
@@ -81,5 +83,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Inspired by [Cline's Memory Bank](https://docs.cline.bot/improving-your-prompting-skills/cline-memory-bank) and other memory systems for LLMs
-- Developed through collaborative iterations with Claude and other AI assistants
+- Developed through collaborative iterations with Claude, Claude Code, and other AI assistants
 - Thanks to all contributors and early adopters who have helped refine this framework
