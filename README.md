@@ -11,6 +11,8 @@ For comprehensive documentation, guides, and explanations, visit our GitHub Page
 ## 🗂️ Repository Structure
 
 ```
+├── .claude/                   # Claude Code custom commands and configurations
+│   └── commands/              # Context network workflow commands (see below)
 ├── agent-specific-prompts/    # Specialized prompts for different AI assistants
 │   ├── claude-code/           # Prompts optimized for Claude Code
 │   ├── cline/                 # Prompts optimized for Cline
@@ -32,6 +34,7 @@ For comprehensive documentation, guides, and explanations, visit our GitHub Page
 ### Understanding Context Networks
 1. Visit the [documentation site](https://jwynia.github.io/context-networks/) to understand the framework concepts
 2. Review the [Comprehensive Guide](core/comprehensive-context-network-guide.md) for detailed information
+3. For Claude Code users: Explore the [custom commands](.claude/commands/) designed for context network workflows
 
 ### Initializing a Context Network
 Here's a practical step-by-step process for starting a new context network:
@@ -65,6 +68,24 @@ Here's a practical step-by-step process for starting a new context network:
    - Archive processed documents to keep the inbox empty
 
 For more detailed examples, check the [example-networks](example-networks/) directory.
+
+### Working with Claude Code
+
+Claude Code includes specialized commands for context network workflows. Key commands include:
+
+- **Planning & Research**: `/plan`, `/research` - Design and investigate without implementation
+- **Implementation**: `/implement`, `/refactor` - Turn plans into working solutions
+- **Quality**: `/audit`, `/review-tests` - Ensure quality and security
+- **Task Management**: `/groom`, `/status` - Organize and track progress
+- **Maintenance**: `/sync`, `/maintenance`, `/retrospective` - Keep everything up-to-date
+- **Documentation**: `/discovery`, `/checklist` - Capture knowledge systematically
+
+Common workflow sequences:
+1. **Daily**: `/sync` → `/status` → `/groom`
+2. **Weekly Planning**: `/sync` → `/retrospective` → `/groom` → `/plan`
+3. **Quality Check**: `/audit` → `/review-tests` → `/refactor`
+
+See the [Claude commands documentation](.claude/commands/README.md) for detailed usage and creating custom commands.
 
 ## FAQ
 - Why isn't the context network working well out of the box?
