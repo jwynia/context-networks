@@ -87,11 +87,70 @@ Common workflow sequences:
 
 See the [Claude commands documentation](.claude/commands/README.md) for detailed usage and creating custom commands.
 
+## 🚀 Version 2.0 Development: Universal Context Engine
+
+We're actively developing the next evolution of context networks - the **Universal Context Engine**. This represents a fundamental shift from manual markdown-based networks to an intelligent, automated system that addresses the core limitations we've observed in real-world usage.
+
+### What's Coming in V2
+
+The Universal Context Engine will provide:
+
+- **Automated Context Management**: Eliminate the manual maintenance burden that causes context networks to degrade over time
+- **Multi-Perspective Access**: Same information accessible from multiple organizational views (think "index" vs "table of contents")
+- **Intelligent Deduplication**: Prevent the "amnesia loop" where agents create duplicate files like `current_tasks.md`, `todo.md`, `next_steps.md`
+- **Historical Context Preservation**: Full project evolution history, including deleted branches and failed experiments
+- **Cross-Domain Pattern Recognition**: Universal patterns that work across code, documents, contracts, and other domains
+- **Decision Governance Integration**: Collaborative decision-making system to prevent agents from making unilateral architectural choices
+
+### Key Technical Innovations
+
+- **Dual Database Architecture**: Kuzu (graph) + DuckDB (analytics) for optimal relationship storage and querying
+- **Progressive Memory Model**: Working memory → semantic storage → episodic archive (inspired by human memory)
+- **Lens System**: Context automatically adapts based on your current task (debugging, feature development, refactoring, etc.)
+- **Continuity Cortex**: Intelligent layer that intercepts file operations to prevent duplication and maintain consistency
+
+### 📋 We Need Your Feedback!
+
+If you've used context networks in real projects, your experience is invaluable for V2 development. We're especially interested in:
+
+**Your Pain Points:**
+- What maintenance burden did you experience?
+- Where did agents struggle with the current system?
+- What information got duplicated or went stale?
+- When did you abandon or scale back your context network?
+
+**Your Success Stories:**
+- What worked really well?
+- Which patterns should we preserve?
+- What made the biggest difference to your productivity?
+- How did context networks change your workflow?
+
+**V2 Feedback:**
+- Which proposed features excite you most?
+- What concerns do you have about automated systems?
+- How do you envision using the decision governance system?
+- What domains (beyond code) would you want to try this with?
+
+### 📖 Read the Full V2 Proposals
+
+- **[Universal Context Engine - Technical Design](proposals/context-network-engine-v2.md)**: Complete 5-document set covering problem analysis, architecture, implementation guide, and API reference
+- **[Decision Approval System](proposals/agent-decision-making.md)**: Protocol for collaborative human-AI decision making
+
+### 💬 How to Share Feedback
+
+- **GitHub Discussions**: [Start a discussion](../../discussions) about your experience or questions
+- **Issues**: [Open an issue](../../issues) for specific bugs, feature requests, or problems you've encountered
+- **Email**: Direct feedback to [your-email] for detailed case studies or sensitive information
+
+Your real-world experience is what will make V2 truly useful. Even "failed" experiments or partial implementations provide valuable insights!
+
 ## FAQ
 - Why isn't the context network working well out of the box?
   - Because a newly-initialized context network is basically just the structure/rules/explanation of the way of working, it takes some interactions and things being added for a context network to settle in. 
 - Why isn't this project itself managed by a context network?
   - Excellent question, fellow "meta" enthusiast. My own default instinct is to want to go similarly meta on pretty much everything I touch. I've tried using context networks to make context networks, to manage information about them, etc. At the moment, everything I've tried to make that work has left the agents I've used (with every model I've tried) confused. If someone can get it to keep the concepts separate in the process, I'd love the contribution. And, I'll definitely continue trying myself when new models come out. Until then, I often use a Claude project with specific files from this project to work on how to improve it and use manual tracking of things and "regular" agentic assistance.
+- Will V2 replace the current markdown-based approach?
+  - Not immediately. V2 is designed to run alongside existing context networks initially, with a gradual migration path. The markdown approach will remain as a backup and for users who prefer manual control.
 
 ## 🤝 Contributing
 

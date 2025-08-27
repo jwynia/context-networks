@@ -83,6 +83,69 @@ I believe context networks represent an important step toward more effective hum
 
 As our projects and knowledge bases grow increasingly complex, having frameworks that help us manage that complexity - not just for ourselves but for the AI systems we work with - will become increasingly valuable.
 
+## 🚀 What's Next: The Universal Context Engine (V2)
+
+Based on real-world usage of context networks across 50+ projects, we've identified fundamental limitations in the current markdown-based approach. The next evolution addresses these head-on with an intelligent, automated system.
+
+### The Evolution from V1 to V2
+
+**Current Context Networks (V1):**
+- Manual markdown-based organization
+- Human-maintained relationships and structure
+- Great for establishing patterns, but degrades over time
+- Requires constant vigilance to prevent information drift
+
+**Universal Context Engine (V2):**
+- Automated context management and maintenance
+- Multi-perspective access to the same information
+- Intelligent deduplication (no more duplicate task files!)
+- Full historical context preservation
+- Cross-domain pattern recognition
+- Integrated decision governance for human-AI collaboration
+
+### Real Problems V2 Solves
+
+From our experience with V1 implementations:
+
+1. **The Amnesia Loop**: Agents create `current_tasks.md`, `todo.md`, `next_steps.md` because they don't see existing ones
+2. **Maintenance Burden**: Manual upkeep causes networks to become stale and unreliable
+3. **Context Fragmentation**: Information scattered across files, issues, commits, and memory
+4. **Static Organization**: Same view for debugging vs. feature development vs. onboarding
+5. **Lost History**: Deleted branches and failed experiments contain valuable learning
+
+### Technical Approach
+
+V2 uses a sophisticated dual-database architecture:
+- **Graph Database (Kuzu)**: Stores relationships and enables complex traversals
+- **Analytics Database (DuckDB)**: Powers fast queries and materialized views
+- **Memory-Inspired Processing**: Working memory → semantic storage → episodic archive
+- **Lens System**: Task-specific views that automatically emphasize relevant information
+- **Continuity Cortex**: Intercepts file operations to prevent duplication and maintain consistency
+
+### Your Experience Matters
+
+If you've used context networks in real projects, your feedback is crucial for V2 development. We need to understand:
+
+- **What worked well?** Which patterns should we preserve and automate?
+- **What broke down?** Where did maintenance become too burdensome?
+- **What got duplicated?** Which information management problems occurred repeatedly?
+- **How did agents struggle?** What confusion patterns did you observe?
+
+### Read the Full V2 Design
+
+The complete technical design is available in our proposals:
+
+- **[Universal Context Engine Design](https://github.com/jwynia/context-networks/blob/main/proposals/context-network-engine-v2.md)**: 5-document comprehensive design covering problem analysis, architecture, implementation, and API reference
+- **[Decision Approval System](https://github.com/jwynia/context-networks/blob/main/proposals/agent-decision-making.md)**: Protocol for preventing agents from making unilateral architectural decisions
+
+### Share Your Feedback
+
+- **[GitHub Discussions](https://github.com/jwynia/context-networks/discussions)**: Share your experience and ask questions
+- **[GitHub Issues](https://github.com/jwynia/context-networks/issues)**: Report specific problems or request features
+- **Email**: Contact us directly for detailed case studies or sensitive feedback
+
+Your real-world experience - including "failed" experiments and partial implementations - provides invaluable insights for making V2 truly useful.
+
 I'm excited to see how this framework evolves and what you build with it!
 
 ---
